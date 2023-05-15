@@ -1,0 +1,116 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  text-align: center !important;
+  width: auto;
+  padding: 60px;
+  font-size:20px;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("1.jpg"); }
+.img2 { background-image: url("3.jpg"); }
+.img3 { background-image: url("5.jpg"); }
+.img4 { background-image: url("0.jpg"); }
+.img5 { background-image: url("4.jpg"); }
+.img6 { background-image: url("2.jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.800); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border: 7px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.containerpopu {
+  align-items: center;
+  justify-content: center;
+
+}
+
+.containerpopu img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.900);
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #ffffff00;
+  color: white;
+  width: 550px;
+  max-width: 80%;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.my-button {
+  background-color: #db3a3a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.my-button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
