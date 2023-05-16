@@ -140,7 +140,11 @@ body.loaded #loading-overlay {
   position: absolute;
   max-width: 100%;
   height: auto;
-  top: 40%;
+  top: 38%;
+  /* text-align: center; */
+  width: 470px;
+  /* membuat gambar tidak ke samping */
+  overflow: hidden; 
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -235,7 +239,7 @@ header {
   background-position: center;
   /* background-color: #333; */
   /* color: #fff; */
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   position: fixed;
   top: 0;
@@ -252,8 +256,8 @@ header {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 5px;
-  margin-top: 0px;
+  border-radius: 0px;
+  margin-top: 5px;
   cursor: pointer;
 }
 
@@ -272,8 +276,8 @@ header {
 }
 
 .header-button img {
-  width: 100px;
-  height: 30px;
+  width: 130px;
+  height: 40px;
 }
 
 .element {
