@@ -1,59 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GOBLOCK SQUAD</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- MUSIC -->
-      <script>
-      function play() {
-      var audio = document.getElementById("audio");
-      audio.play();
-      }
-      </script>
-      <audio id="audio" src="bgm.mp3" loop></audio>
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GOBLOCK SQUAD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <h2>WELCOME BLOCK</h2>
-      <div class="containerpopu">
-        <img src="LOGOSQUAD.png" class="imgpopu" alt="Gambar">
-      </div>
-      
-      <button id="closePopup" class="my-button" value="PLAY" onclick="play()">BUKA</button>
+  <body>
+    <header class="element">
+      <!-- <h1 class="header-title">Selamat Datang di Website Kami</h1>
+      <p class="header-subtitle">Ini adalah contoh header keren</p> -->
+      <button class="header-button">
+        <a href="http://www.goblock.my.id">
+          <img src="img/button_image.png" alt="Tombol Gambar"
+        /></a>
+      </button>
+      <button class="header-button" onclick="myFunction()">
+        <img src="img/button_image2.png" alt="Tombol Gambar" />
+      </button>
+      <button class="header-button" onclick="myFunction()">
+        <img src="img/button_image3.png" alt="Tombol Gambar" />
+      </button>
+    </header>
+    <!-- SPINNER -->
+    <!-- <div id="loading-overlay">
+    <div class="spinner">
+      <img src="spinner.gif" alt="Loading Spinner">
     </div>
-  </div>
+  </div> -->
+    <!-- END SPINNER -->
+    <!-- MUSIC -->
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+    <audio id="audio" src="bgm.mp3" loop></audio>
+    <!-- END MUSIK -->
 
-  <script src="js.js"></script>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2>WELCOME BLOCK</h2>
+        <div class="containerpopu">
+          <img src="LOGOSQUAD.png" class="imgpopu" alt="Gambar" />
+        </div>
 
-  <div class="container">
-    <img src="logo.png" alt="Logo">
-  </div>
+        <button id="closePopup" class="my-button" value="PLAY" onclick="play()">
+          GO TO SAINT HAVEN
+        </button>
+      </div>
+    </div>
 
-<div class="bg-image img1"></div>
-<div class="bg-image img2"></div>
-<div class="bg-image img3"></div>
-<div class="bg-image img4">
-  <p><b>MEMBER</b><br><br>JR | RIZ | FLA (SANG MAHA RATU) | DEV | MELPIS (GA MAIN KONT) | YONG | RIO (HODE) | MAD | HENDRA | RIOT | CILO | WIRO | NO | YETAN<br>
-  Menang tidak terlalu perlu senang-senang no 1, semua butuh proses yang penting have fun! GLHF<br>
-  Mohon maaf jika tidak ada yang tercantumkan<br><br>Discord : <a href="https://discord.gg/v5KwjDtNW2">HERE!</a></p> 
-</div>
-<div class="bg-image img5">
-</div>
-<div class="bg-image img6"></div>
-<div class="bg-image img7"></div>
+    <script src="js.js"></script>
 
-<div class="bg-text">SQUAD GOBLOCK</div>
+    <div class="container">
+      <img src="logo.png" alt="Logo" />
+    </div>
 
-<footer>
-  Created by JRJR Ganteng &copy; 2023.
-</footer>
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4">
+      <h2>MEMBER</h2>
+      <p>
+        <span class="fr-red">JRJR</span>
+        <span class="fr-red">REDJUICE</span>
+        <span class="fr-red">DEV</span>
+        <span class="fr-red">RIO</span>
+        <span class="fr-red">YOUNG</span>
+        <span class="fr-pink">FLA</span>
+        <span class="fr-red">MAD</span>
+        <span class="fr-red">HENDRA</span>
+        <span class="fr-red">RIOT</span>
+        <span class="fr-pink">CILO</span>
+        <span class="fr-red">WIRO</span>
+        <span class="fr-red">MANDO</span>
+        <span class="fr-pink">MAI</span>
+        <span class="fr-pink">YETAN</span>
+        <br /><br />
+        Menang tidak terlalu perlu senang-senang no satu, semua butuh proses
+        yang penting have fun! GLHF<br /><br />Discord :
+        <a href="https://discord.gg/v5KwjDtNW2">HERE!</a>
+      </p>
+    </div>
+    <div class="bg-image img5"></div>
+    <div class="bg-image img6"></div>
+    <div class="bg-image img7"></div>
 
-</body>
+    <!-- <div class="bg-text">SQUAD GOBLOCK</div> -->
+
+    <footer>Created by JRJR &copy; 2023.</footer>
+  </body>
+  <script>
+    function myFunction() {
+      // Aksi yang ingin dilakukan saat tombol gambar diklik
+      alert("SOON!");
+    }
+  </script>
 </html>
