@@ -69,15 +69,15 @@ body.loaded #loading-overlay {
 
 /* Images used */
 .img1 {
-  background-image: url("img/0.jpg");
+  background-image: url("img/page1.jpg");
 }
 
 .img2 {
-  background-image: url("img/3.jpg");
+  background-image: url("img/page2.jpg");
 }
 
 .img3 {
-  background-image: url("img/5.jpg");
+  background-image: url("img/page3.jpg");
 }
 
 .img4 {
@@ -85,15 +85,15 @@ body.loaded #loading-overlay {
 }
 
 .img5 {
-  background-image: url("img/4.jpg");
+  background-image: url("img/page5.jpg");
 }
 
 .img6 {
-  background-image: url("img/7.jpg");
+  background-image: url("img/page6.jpg");
 }
 
 .img7 {
-  background-image: url("img/2.jpg");
+  background-image: url("img/page7.jpg");
 }
 
 /* Position text in the middle of the page/image */
@@ -208,7 +208,7 @@ header {
 }
 
 .header-button:hover {
-  background-image: url("img/button_hover.png");
+  background-image: url("img/btn_hover.png");
   background-size: cover;
   background-position: center;
   background-color: #ffffff00;

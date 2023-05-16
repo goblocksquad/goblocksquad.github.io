@@ -21,7 +21,7 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GOBLOCK SQUAD</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="asset/style.css" />
   </head>
 
   <body>
@@ -29,15 +29,15 @@
       <!-- <h1 class="header-title">Selamat Datang di Website Kami</h1>
       <p class="header-subtitle">Ini adalah contoh header keren</p> -->
       <button class="header-button">
-        <a href="http://www.goblock.my.id">
-          <img src="img/Home.png" alt="Tombol Gambar"
+        <a href="http://goblock.my.id">
+          <img src="asset/img/btn_1.png" alt="Tombol Gambar"
         /></a>
       </button>
       <button class="header-button" onclick="myFunction()">
-        <img src="img/Team.png" alt="Tombol Gambar" />
+        <img src="asset/img/btn_2.png" alt="Tombol Gambar" />
       </button>
       <button class="header-button" onclick="myFunction()">
-        <img src="img/Roadmap.png" alt="Tombol Gambar" />
+        <img src="asset/img/btn_3.png" alt="Tombol Gambar" />
       </button>
     </header>
     <!-- SPINNER -->
@@ -54,14 +54,14 @@
         audio.play();
       }
     </script>
-    <audio id="audio" src="bgm.mp3" loop></audio>
+    <audio id="audio" src="asset/bgm.mp3" loop></audio>
     <!-- END MUSIK -->
 
     <div id="popup" class="popup">
       <div class="popup-content">
         <h2>WELCOME BLOCK</h2>
         <div class="containerpopu">
-          <img src="img/LOGOSQUAD.png" class="imgpopu" alt="Gambar" />
+          <img src="asset/img/logosquad.png" class="imgpopu" alt="Gambar" />
         </div>
 
         <button id="closePopup" class="my-button" value="PLAY" onclick="play()">
@@ -70,10 +70,8 @@
       </div>
     </div>
 
-    <script src="js.js"></script>
-
     <div class="container">
-      <img src="img/logo.png" alt="Logo" />
+      <img src="asset/img/logo.png" alt="Logo" />
     </div>
 
     <div class="bg-image img1"></div>
@@ -109,6 +107,9 @@
     <!-- <div class="bg-text">SQUAD GOBLOCK</div> -->
 
     <footer>Created by JRJR &copy; 2023.</footer>
+    <script src="asset/js.js"></script>
+
+
     <script>
       function myFunction() {
         // Aksi yang ingin dilakukan saat tombol gambar diklik
