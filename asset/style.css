@@ -115,6 +115,9 @@ body.loaded #loading-overlay {
 .jurney5 {
   background-image: url("img/jurneypage5.jpg");
 }
+.jurney6 {
+  background-image: url("img/jurneypage6.jpg");
+}
 
 /* Position text in the middle of the page/image */
 .bg-text {
