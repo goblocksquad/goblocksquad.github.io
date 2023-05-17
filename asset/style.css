@@ -332,3 +332,13 @@ header {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+.img-depan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 5vh;
+  position: absolute;
+  z-index: 99;
+}
