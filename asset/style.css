@@ -147,13 +147,16 @@ body.loaded #loading-overlay {
   background-image: url("img/teampage4.jpg");
 }
 .team5 {
-  background-image: url("img/jurneypage4.jpg");
+  background-image: url("img/teampage5.jpg");
 }
 .team6 {
-  background-image: url("img/jurneypage5.jpg");
+  background-image: url("img/teampage6.jpg");
 }
 .team7 {
-  background-image: url("img/jurneypage6.jpg");
+  background-image: url("img/teampage0.jpg");
+}
+.team8 {
+  background-image: url("img/teamfooter.jpg");
 }
 
 /* Position text in the middle of the page/image */
