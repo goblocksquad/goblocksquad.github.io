@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="asset/style.css" />
   </head>
 
-  <body onclick="showToast()">
+  <body>
     <div id="toast" class="hide">Perhatian! Untuk tampilan terbaik gunakan handphone atau tablet.</div>
     <header class="element">
       <div class="img-depan">
@@ -75,7 +75,7 @@
           <img src="asset/img/logosquad.png" class="imgpopu" alt="Gambar" />
         </div>
 
-        <button id="closePopup" class="my-button" value="PLAY" onclick="play()">
+        <button id="closePopup" class="my-button" value="PLAY" onclick="play(); showToast();">
           GO TO SAINT HAVEN
         </button>
       </div>
