@@ -21,14 +21,10 @@ h2 {
   width: auto;
 }
 
-.my-element {
-  min-height: 200px; /* Nilai min-height default */
-}
-
 /* Media query untuk tampilan desktop */
 @media only screen and (min-width: 1024px) {
   html {
-    min-height: 2000px;
+    min-height: 250vh;
     /* background-color: red; */
   }
 }
