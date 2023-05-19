@@ -25,6 +25,27 @@ h2 {
 @media only screen and (min-width: 1024px) {
   html {
     min-height: 250vh;
+    #toast {
+      z-index: 9990;
+      position: fixed;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #df3939;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: opacity 0.3s;
+    }
+    
+    #toast.show {
+      opacity: 1;
+    }
+    
+    #toast.hide {
+      opacity: 0;
+    }
+    
     /* background-color: red; */
   }
 }
@@ -448,25 +469,4 @@ header {
   100% {
     transform: rotate(3deg);
   }
-}
-
-#toast {
-  z-index: 9990;
-  position: fixed;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #df3939;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: opacity 0.3s;
-}
-
-#toast.show {
-  opacity: 1;
-}
-
-#toast.hide {
-  opacity: 0;
 }
