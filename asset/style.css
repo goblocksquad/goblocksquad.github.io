@@ -423,15 +423,15 @@ header {
 .gambaranimasi2 {
   text-align: center !important;
   width: auto;
-  animation: zoom 2s infinite alternate;
+  animation: zoom 3s infinite alternate;
 }
 
 @keyframes zoom {
   0% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1);
   }
 }
 
@@ -448,4 +448,25 @@ header {
   100% {
     transform: rotate(3deg);
   }
+}
+
+#toast {
+  z-index: 9990;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #df3939;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+}
+
+#toast.show {
+  opacity: 1;
+}
+
+#toast.hide {
+  opacity: 0;
 }
