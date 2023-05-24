@@ -13,12 +13,12 @@ window.addEventListener("load", function () {
 });
 
 function showToast() {
-  var toast = document.getElementById('toast');
-  toast.classList.remove('hide');
-  toast.classList.add('show');
+  var toast = document.getElementById("toast");
+  toast.classList.remove("hide");
+  toast.classList.add("show");
 
-  setTimeout(function() {
-    toast.classList.remove('show');
-    toast.classList.add('hide');
+  setTimeout(function () {
+    toast.classList.remove("show");
+    toast.classList.add("hide");
   }, 7000); // Durasi tampilan toast dalam milidetik (misalnya, 3000ms untuk 3 detik)
 }
