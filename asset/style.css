@@ -340,6 +340,15 @@ header {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.fr-grey {
+  font-size: 13px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #37383a;
+  padding: 7px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 .fr-pink {
   font-size: 13px;
   border-radius: 5px;
