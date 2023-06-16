@@ -156,6 +156,11 @@ body.loaded #loading-overlay {
   background-image: url("img/teamfooter.jpg");
 }
 
+/* Images used plakat */
+.plakat1 {
+  background-image: url("img/page1.jpg");
+}
+
 /* Position text in the middle of the page/image */
 .bg-text {
   background-color: rgb(0, 0, 0);
@@ -181,6 +186,32 @@ body.loaded #loading-overlay {
   max-width: 100%;
   height: auto;
   top: 38%;
+  /* text-align: center; */
+  width: 470px;
+  /* membuat gambar tidak ke samping */
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.containerplakat {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  top: 38%;
+  /* text-align: center; */
+  width: 470px;
+  /* membuat gambar tidak ke samping */
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.containertombolplakat {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  top: 43%;
   /* text-align: center; */
   width: 470px;
   /* membuat gambar tidak ke samping */
@@ -430,4 +461,49 @@ header {
   100% {
     transform: rotate(3deg);
   }
+}
+
+.slider {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-style: dotted;
+  border-radius: 5%;
+}
+
+.slidertombol {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 95%;
+  left: 33%;
+  transform: translateY(-50%);
+}
+
+.slider-controls button {
+  background-color: transparent;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
 }
