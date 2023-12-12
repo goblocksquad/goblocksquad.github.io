@@ -101,7 +101,22 @@ body.loaded #loading-overlay {
   background-size: cover;
 }
 
+.bg-image-btn-download {
+  /* Full height */
+  height: 10%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #08204b;
+  cursor: pointer;
+}
+
 /* Images used */
+.img-btn-download {
+  background-image: url("img/btn_download.png");
+}
+
 .img1 {
   background-image: url("img/page1.jpg");
 }
@@ -156,11 +171,6 @@ body.loaded #loading-overlay {
   background-image: url("img/teamfooter.jpg");
 }
 
-/* Images used plakat */
-.plakat1 {
-  background-image: url("img/page1.jpg");
-}
-
 /* Position text in the middle of the page/image */
 .bg-text {
   background-color: rgb(0, 0, 0);
@@ -194,28 +204,10 @@ body.loaded #loading-overlay {
   transform: translate(-50%, -50%);
 }
 
-.containerplakat {
+.btn_download {
   position: absolute;
-  max-width: 100%;
-  height: auto;
-  top: 38%;
-  /* text-align: center; */
-  width: 470px;
-  /* membuat gambar tidak ke samping */
-  overflow: hidden;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.containertombolplakat {
-  position: absolute;
-  max-width: 100%;
-  height: auto;
-  top: 43%;
-  /* text-align: center; */
-  width: 470px;
-  /* membuat gambar tidak ke samping */
-  overflow: hidden;
+  top: 101%;
+  /* top: 810px; */
   left: 50%;
   transform: translate(-50%, -50%);
 }
