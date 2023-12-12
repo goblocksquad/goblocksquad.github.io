@@ -21,53 +21,37 @@ h2 {
   width: auto;
 }
 
-/* Media query untuk tampilan desktop */
-@media only screen and (min-width: 1024px) {
-  html {
-    min-height: 250vh;
-    #toast {
-      z-index: 9990;
-      position: fixed;
-      top: 15%;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #df3939;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 4px;
-      transition: opacity 0.3s;
-    }
-
-    #toast.show {
-      opacity: 1;
-    }
-
-    #toast.hide {
-      opacity: 0;
-    }
-    .container {
-      top: 23%;
-    }
-    .img4 {
-      height: 10%;
-    }
-  }
+.my-element {
+  min-height: 200px; /* Nilai min-height default */
 }
 
-/* Media query untuk tampilan tablet */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  html {
-    min-height: 300px;
-  }
+/* SPINNER */
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Media query untuk tampilan ponsel */
-@media only screen and (max-width: 767px) {
-  html {
-    min-height: 250px;
-    .img4 {
-      height: 55%;
-    }
+.spinner img {
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -101,74 +85,27 @@ body.loaded #loading-overlay {
   background-size: cover;
 }
 
-.bg-image-btn-download {
-  /* Full height */
-  height: 10%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #08204b;
-  cursor: pointer;
-}
-
-/* Images used */
-.img-btn-download {
-  background-image: url("img/btn_download.png");
-}
-
-.img1 {
-  background-image: url("img/page1.jpg");
-}
-
-.img2 {
-  background-image: url("img/page2.jpg");
-}
-
-.img3 {
-  background-image: url("img/page3.jpg");
-}
-
-.img4 {
+/* Images used page */
+.page0 {
   background-image: url("#");
 }
-
-.img5 {
-  background-image: url("img/page5.jpg");
+.page1 {
+  background-image: url("img/mt-page.jpg");
 }
-
-.img6 {
-  background-image: url("img/page6.jpg");
+.page2 {
+  background-image: url("#");
 }
-
-.img7 {
-  background-image: url("img/page7.jpg");
+.page3 {
+  background-image: url("#");
 }
-
-/* Images used team */
-.team1 {
-  background-image: url("img/teampage1.jpg");
+.page4 {
+  background-image: url("#");
 }
-.team2 {
-  background-image: url("img/teampage2.jpg");
+.page5 {
+  background-image: url("#");
 }
-.team3 {
-  background-image: url("img/teampage3.jpg");
-}
-.team4 {
-  background-image: url("img/teampage4.jpg");
-}
-.team5 {
-  background-image: url("img/teampage5.jpg");
-}
-.team6 {
-  background-image: url("img/teampage6.jpg");
-}
-.team7 {
-  background-image: url("img/teampage0.jpg");
-}
-.team8 {
-  background-image: url("img/teamfooter.jpg");
+.page6 {
+  background-image: url("#");
 }
 
 /* Position text in the middle of the page/image */
@@ -191,7 +128,7 @@ body.loaded #loading-overlay {
   text-align: center;
 }
 
-.containerjurney {
+.containerpage {
   position: absolute;
   max-width: 100%;
   height: auto;
@@ -200,14 +137,6 @@ body.loaded #loading-overlay {
   width: 470px;
   /* membuat gambar tidak ke samping */
   overflow: hidden;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.btn_download {
-  position: absolute;
-  top: 101%;
-  /* top: 810px; */
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -423,79 +352,4 @@ header {
   width: 6vh;
   position: absolute;
   z-index: 99;
-}
-
-.gambaranimasi2 {
-  text-align: center !important;
-  width: auto;
-  animation: zoom 3s infinite alternate;
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.gambaranimasi1 {
-  text-align: center !important;
-  width: auto;
-  animation: spin 2s linear infinite alternate;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(-3deg);
-  }
-  100% {
-    transform: rotate(3deg);
-  }
-}
-
-.slider {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-  border-style: dotted;
-  border-radius: 5%;
-}
-
-.slidertombol {
-  position: relative;
-  height: 300px;
-  overflow: hidden;
-}
-
-.slider img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.slider img.active {
-  opacity: 1;
-}
-
-.slider-controls {
-  position: absolute;
-  top: 95%;
-  left: 33%;
-  transform: translateY(-50%);
-}
-
-.slider-controls button {
-  background-color: transparent;
-  font-weight: 600;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  margin-right: 10px;
-  cursor: pointer;
 }
