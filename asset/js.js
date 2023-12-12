@@ -12,6 +12,9 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded");
 });
 
+// TAHUN OTOMATIS
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
 function showToast() {
   var toast = document.getElementById("toast");
   toast.classList.remove("hide");
